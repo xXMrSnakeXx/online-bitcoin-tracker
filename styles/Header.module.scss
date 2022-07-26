@@ -1,0 +1,17 @@
+@import "mixins";
+$primary-color:orange;
+.container {
+  @include  flex-centred();
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: #262626;
+  box-shadow: 0 0 12px 5px rgb(255 107 8 / 50%);
+  z-index: 444;
+  & h1 {
+    color: $primary-color;
+    margin: 0 15px 0 15px;
+  }
+}
